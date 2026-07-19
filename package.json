@@ -1,0 +1,59 @@
+{
+  "name": "vsl-booking-landing-page",
+  "version": "1.0.0",
+  "description": "A mobile-first, high-performance landing page combining an above-the-fold video sales letter, an embedded booking calendar, and dual lead sync to MailerLite and Zoho CRM.",
+  "license": "MIT",
+  "author": "Prince Boyard MBOUNGOU NGOMA <https://github.com/MrBoyard7>",
+  "private": false,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server/local-server.js",
+    "dev": "node server/local-server.js",
+    "lint": "eslint src api server tests --ext .js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "node build.js",
+    "lighthouse": "npx --yes lighthouse http://localhost:3000 --view --preset=desktop"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrBoyard7/vsl-booking-landing-page.git"
+  },
+  "homepage": "https://github.com/MrBoyard7/vsl-booking-landing-page#readme",
+  "bugs": {
+    "url": "https://github.com/MrBoyard7/vsl-booking-landing-page/issues"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "api/**/*.js",
+      "src/js/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "coverage"
+  },
+  "keywords": [
+    "landing-page",
+    "vanilla-js",
+    "mailerlite",
+    "zoho-crm",
+    "gdpr",
+    "video-sales-letter"
+  ]
+}

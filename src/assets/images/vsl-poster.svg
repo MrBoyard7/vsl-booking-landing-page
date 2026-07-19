@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#10192c" />
+  <circle cx="400" cy="480" r="64" fill="#c99a44" />
+  <path d="M380 448l70 32-70 32z" fill="#10192c" />
+  <text x="400" y="620" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#f5f1e8">
+    Replace with your video sales letter poster
+  </text>
+</svg>

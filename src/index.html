@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascent Advisory — Book Your Free Growth Audit Call</title>
+    <meta
+      name="description"
+      content="Watch the 4-minute overview, then reserve a free 20-minute Growth Audit call with Ascent Advisory. For founders scaling past $1M in revenue."
+    />
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ascent Advisory — Book Your Free Growth Audit Call" />
+    <meta
+      property="og:description"
+      content="A free 20-minute call to find the one constraint slowing your growth down."
+    />
+    <meta property="og:image" content="/assets/images/og-cover.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured data: helps search engines understand the offer -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ascent Advisory",
+        "description": "Growth advisory for founders scaling past $1M in annual revenue.",
+        "url": "https://example.com/",
+        "areaServed": "Worldwide"
+      }
+    </script>
+
+    <!-- Fonts: preconnect first for faster first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__row">
+        <a class="brand" href="/">
+          <span class="brand__mark" aria-hidden="true">△</span>
+          Ascent Advisory
+        </a>
+        <a class="btn btn--ghost btn--small" href="#booking">Reserve a call</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO / VSL ============ -->
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <p class="eyebrow hero__area-eyebrow">For founders past $1M in revenue</p>
+          <h1 class="hero__headline hero__area-headline">
+            Find the one constraint that's <em>capping</em> your growth.
+          </h1>
+
+          <div class="hero__media hero__area-media">
+            <div class="video-player" id="vsl-player" data-video-src="/assets/video/vsl.mp4">
+              <video
+                class="video-player__el"
+                id="vsl-video"
+                poster="/assets/images/vsl-poster.svg"
+                muted
+                playsinline
+                preload="metadata"
+              >
+                <source src="/assets/video/vsl.mp4" type="video/mp4" />
+                Your browser does not support embedded video. You can
+                <a href="/assets/video/vsl.mp4">download the video</a> instead.
+              </video>
+
+              <button
+                class="video-player__big-play"
+                id="vsl-big-play"
+                type="button"
+                aria-label="Play video"
+              >
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" fill="currentColor" />
+                </svg>
+              </button>
+
+              <div class="video-player__controls" id="vsl-controls" hidden>
+                <button
+                  class="video-player__ctrl"
+                  id="vsl-toggle-play"
+                  type="button"
+                  aria-label="Pause"
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor" />
+                  </svg>
+                </button>
+
+                <div class="video-player__bar" id="vsl-progress-track" role="presentation">
+                  <div class="video-player__bar-fill" id="vsl-progress-fill"></div>
+                </div>
+
+                <button
+                  class="video-player__ctrl"
+                  id="vsl-toggle-mute"
+                  type="button"
+                  aria-label="Unmute"
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+
+              <p class="video-player__fallback" id="vsl-fallback" hidden>
+                The video will be available shortly.
+                <a href="#booking">Skip ahead and reserve a call</a>.
+              </p>
+            </div>
+          </div>
+
+          <p class="hero__sub hero__area-sub">
+            Watch the 4-minute breakdown above, then reserve a free 20-minute Growth Audit
+            call. No pitch, no fluff — just a clear read on what's actually in your way.
+          </p>
+          <a class="btn btn--primary hero__area-cta" href="#booking">Reserve your seat</a>
+        </div>
+      </section>
+
+      <!-- ============ PROOF STRIP ============ -->
+      <section class="proof">
+        <div class="wrap proof__row">
+          <p class="proof__item"><strong>120+</strong> founders audited</p>
+          <p class="proof__item"><strong>$40M+</strong> in tracked revenue unlocked</p>
+          <p class="proof__item"><strong>20 min</strong> average call length</p>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="how" id="how">
+        <div class="wrap">
+          <h2 class="section-title">Three steps. No sales call in disguise.</h2>
+          <ol class="ledger">
+            <li class="ledger__row">
+              <span class="ledger__index">01</span>
+              <span class="ledger__label">Watch the breakdown</span>
+              <span class="ledger__note">4 minutes, above.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="ledger__index">02</span>
+              <span class="ledger__label">Reserve your slot</span>
+              <span class="ledger__note">Pick a time that fits your calendar.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="ledger__index">03</span>
+              <span class="ledger__label">Get your audit</span>
+              <span class="ledger__note">One constraint, one plan, no obligation.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ BOOKING ============ -->
+      <section class="booking" id="booking">
+        <div class="wrap booking__grid">
+          <div class="booking__calendar-col">
+            <h2 class="section-title section-title--on-dark">Pick a time</h2>
+            <p class="booking__hint">
+              The calendar below is a live embed of our Microsoft Bookings page. It only loads
+              after you accept booking cookies (see the banner) — see
+              <a href="docs/SETUP.md">docs/SETUP.md</a> for how to point this at your own
+              Bookings page.
+            </p>
+            <div
+              class="calendar-embed"
+              id="calendar-embed"
+              data-embed-src="https://outlook.office.com/bookwithme/YOUR-BOOKINGS-PAGE"
+            >
+              <p class="calendar-embed__placeholder">
+                Calendar will appear here once cookies are accepted.
+              </p>
+            </div>
+          </div>
+
+          <div class="booking__form-col">
+            <div class="ticket-stub">
+              <h3 class="ticket-stub__title">Reserve your seat</h3>
+              <p class="ticket-stub__sub">Free · 20 minutes · No pitch</p>
+
+              <form id="lead-form" class="lead-form" novalidate>
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    autocomplete="given-name"
+                    required
+                  />
+                  <p class="field__error" data-error-for="firstName"></p>
+                </div>
+
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    autocomplete="family-name"
+                    required
+                  />
+                  <p class="field__error" data-error-for="lastName"></p>
+                </div>
+
+                <div class="field">
+                  <label for="email">Work email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                  <p class="field__error" data-error-for="email"></p>
+                </div>
+
+                <div class="field">
+                  <label for="company"
+                    >Company <span class="field__optional">(optional)</span></label
+                  >
+                  <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+
+                <div class="field">
+                  <label for="phone"
+                    >Phone <span class="field__optional">(optional)</span></label
+                  >
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                  <p class="field__error" data-error-for="phone"></p>
+                </div>
+
+                <div class="field field--checkbox">
+                  <input id="consent" name="consent" type="checkbox" required />
+                  <label for="consent"
+                    >I agree to be contacted about my Growth Audit call, per the
+                    <a href="#privacy">privacy policy</a>.</label
+                  >
+                  <p class="field__error" data-error-for="consent"></p>
+                </div>
+
+                <button class="btn btn--primary btn--full" type="submit" id="lead-form-submit">
+                  Reserve my seat
+                </button>
+
+                <p
+                  class="lead-form__status"
+                  id="lead-form-status"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="faq" id="faq">
+        <div class="wrap">
+          <h2 class="section-title">Common questions</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Is this actually free?</summary>
+              <p>Yes. No card, no upsell on the call itself.</p>
+            </details>
+            <details class="faq__item">
+              <summary>What should I prepare?</summary>
+              <p>Nothing — just be ready to talk numbers for 20 minutes.</p>
+            </details>
+            <details class="faq__item">
+              <summary>What happens with my data?</summary>
+              <p>
+                It's used only to schedule and prepare your call. See our
+                <a href="#privacy">privacy policy</a> for the full detail.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap site-footer__row">
+        <p>&copy; 2026 Ascent Advisory. All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="#privacy">Privacy policy</a>
+          <button type="button" id="manage-cookies-link" class="link-button">
+            Manage cookies
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ COOKIE CONSENT BANNER ============ -->
+    <div
+      class="cookie-banner"
+      id="cookie-banner"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookie preferences"
+      hidden
+    >
+      <div class="cookie-banner__row">
+        <p class="cookie-banner__copy">
+          We use essential cookies to run this site, and optional cookies for the booking
+          calendar embed. You choose what's optional.
+        </p>
+        <div class="cookie-banner__actions">
+          <button type="button" class="btn btn--ghost btn--small" id="cookie-reject">
+            Reject non-essential
+          </button>
+          <button type="button" class="btn btn--primary btn--small" id="cookie-accept">
+            Accept all
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/cookie-consent.js" defer></script>
+    <script src="/js/video-player.js" defer></script>
+    <script src="/js/lead-form.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

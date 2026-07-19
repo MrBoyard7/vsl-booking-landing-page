@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+
+# Environment variables (never commit real secrets)
+.env
+.env.local
+
+# Editor/OS noise
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# In case a Python virtual environment ever ends up next to this
+# Node.js project (unrelated to it, but harmless to ignore defensively)
+.venv/
+venv/
+__pycache__/
