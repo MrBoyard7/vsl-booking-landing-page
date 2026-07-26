@@ -51,8 +51,11 @@ no framework, no build-step lock-in, no monthly tooling subscription.
 - **Basic on-page SEO** — meta description, canonical tag, Open Graph /
   Twitter Card tags, JSON-LD structured data, `robots.txt`, `sitemap.xml`.
 - **Fully tested** — unit tests for every piece of business logic
-  (validation, MailerLite, Zoho CRM, cookie consent), runnable without any
-  real API credentials via a built-in mock mode.
+  (validation, MailerLite, Zoho CRM, cookie consent) _and_ DOM-level tests
+  for the front end (video player, calendar consent-gating, form
+  submission), runnable without any real API credentials via a built-in
+  mock mode. ~97% line coverage at the time of writing — see the Codecov
+  badge above for the current number.
 
 ## Tech stack
 
@@ -62,7 +65,7 @@ no framework, no build-step lock-in, no monthly tooling subscription.
 | Behaviour    | Vanilla JavaScript (ES2018, no framework)                                        |
 | Backend      | A single Node.js serverless function (Vercel-style handler, reusable on Netlify) |
 | Local dev    | Express (static file serving + the same API route)                               |
-| Testing      | Jest                                                                             |
+| Testing      | Jest (+ jsdom for DOM-level tests)                                               |
 | Linting      | ESLint + Prettier                                                                |
 | Build        | esbuild (minification only — no bundler needed)                                  |
 | CI/CD        | GitHub Actions, Codecov, optional GitHub Pages preview                           |
@@ -100,7 +103,16 @@ no framework, no build-step lock-in, no monthly tooling subscription.
 │   ├── index.html
 │   ├── robots.txt
 │   └── sitemap.xml
-├── tests/                     # one test file per module above
+├── tests/
+│   ├── cookie-consent.test.js         # pure storage functions + banner DOM wiring
+│   ├── handleLeadSubmission.test.js   # submission orchestrator (mock mode)
+│   ├── lead-form.test.js              # client validation + form submission DOM wiring
+│   ├── mailerlite.test.js             # MailerLite client, mocked fetch
+│   ├── main.test.js                   # calendar consent-gating DOM wiring
+│   ├── submit-lead.test.js            # serverless handler entry point
+│   ├── validateLead.test.js           # server-side validation
+│   ├── video-player.test.js           # custom video player DOM wiring
+│   └── zoho.test.js                   # Zoho CRM client, incl. OAuth refresh
 ├── build.js                   # production build → dist/
 ├── .env.example
 ├── .eslintrc.json
